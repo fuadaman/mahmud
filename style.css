@@ -1,93 +1,156 @@
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: auto;
-  font-weight: bolder;
-  color: rgb(33, 43, 34);
+/* GLOBAL RESET: Good practice for consistent layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and border don't increase the element's total width/height */
 }
 
-h2 {
-  font-family: "Merriweather", serif;
-  font-size: auto;
-  font-weight: 900;
-  color: rgb(27, 67, 42);
-}
-
-p {
-  font-family: "Merriweather", serif;
-  font-size: auto;
-  font-weight: 500;
-  color: rgb(17, 42, 27);
-}
-
-a {
-  font-family: "Merriweather", serif;
-  font-size: auto;
-  font-weight: 100;
-  color: rgb(13, 31, 20);
-  text-decoration: none;
-}
-i {
-  color: rgb(28, 84, 28);
-  font-size: 50px;
-}
-
-.container {
-  width: 700px;
-  margin:0 auto;
-}
-
-.card {
-  background-color: white;
-  box-shadow: 0px 0px 30px rgb(71, 126, 29);
-  text-align: center;
-  padding: 30px;
-  margin: 30px 0;;
-}
-
-.list-inline li {
-  display: inline;
-}
-
-.list-inline {
-  padding: 0;
-}
-
-.img-circle {
-  width: 100px;
-  height: auto;
-  border: 1px;
-  border-radius: 50%;
-}
-
-.btn-blue {
-  background-color: rgb(4, 69, 9);
-  color: rgb(244, 247, 244);
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-}
-.btn-blue:hover {
-  background-color: rgb(32, 32, 19);
+/* 1. Base Styles & Dark Palette */
+:root {
+  /* Define a clean, dark color palette */
+  --color-primary: #1a1a1a;        /* Deep, soft black for background */
+  --color-card-bg: #282828;        /* Slightly lighter black for cards */
+  --color-text-light: #e0e0e0;     /* Off-white for body text (better than pure white) */
+  --color-text-accent: #a0a0a0;    /* Muted gray for secondary text/links */
+  --color-accent-green: #4caf50;   /* Vibrant, accessible green accent */
+  --color-accent-hover: #388e3c;   /* Darker green for hover state */
+  --shadow-color: #4caf50;         /* Use the accent color for shadows */
 }
 
 body {
-  background-color: white;
+  background-color: var(--color-primary);
+  font-family: 'Merriweather', serif; /* Keep your chosen serif font */
+  color: var(--color-text-light); /* Apply light text color universally */
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 960px) {
+/* 2. Container & Card Styles */
+.container {
+  width: 90%; /* Use a percentage for better scaling */
+  max-width: 700px; /* Set a max width for readability */
+  margin: 40px auto;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  /* Elegant, soft shadow with an accent glow */
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.4); /* Reduced spread, higher opacity, green glow */
+  text-align: center;
+  padding: 40px; /* Increased padding for more white space (simplicity) */
+  border-radius: 10px; /* Softer, modern corners */
+  margin: 30px 0;
+}
+
+/* 3. Typography: Focus on Hierarchy and Readability */
+
+h1, h2, p, a {
+  /* Removed 'font-size: auto;' as it's invalid CSS. We set explicit sizes */
+  font-family: "Merriweather", serif;
+  color: var(--color-text-light); /* Consistent light text color */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger and bolder for the main title */
+  font-weight: 900;
+  color: var(--color-accent-green); /* Highlight the name/main title */
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 600; /* Slightly lighter for the subtitle */
+  color: var(--color-text-accent);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6; /* Improved spacing for better readability */
+  margin-bottom: 25px;
+}
+
+/* 4. Link & Button Styles */
+a {
+  font-weight: 600; /* Heavier weight makes links stand out */
+  color: var(--color-text-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent-green); /* Subtle color change on hover */
+}
+
+.btn-blue {
+  background-color: var(--color-accent-green);
+  color: var(--color-primary); /* Dark text on bright button for contrast */
+  text-decoration: none;
+  padding: 12px 24px; /* More padding for a bolder button */
+  border-radius: 6px;
+  font-weight: 700;
+  display: inline-block; /* Allows padding and width control */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-blue:hover {
+  background-color: var(--color-accent-hover); /* Darker green on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Image & Social Media Icons */
+.img-circle {
+  width: 130px; /* Slightly larger image */
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent-green); /* Accent border around the image */
+  margin-bottom: 20px;
+}
+
+i {
+  color: var(--color-text-accent); /* Muted icon color for elegance */
+  font-size: 3em; /* Icons are still large, but less overpowering */
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: var(--color-accent-green); /* Accent green on hover */
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block; /* Use inline-block for better spacing control */
+  margin: 0 15px; /* Added horizontal margin */
+}
+
+/* 6. Responsive Design (Refined Breakpoints) */
+@media (max-width: 992px) {
   .container {
-    width: 700px;
+    max-width: 600px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .container {
-    width: 500px;
+    max-width: 90%; /* Use full width for mobile */
   }
-}
-
-@media (max-width: 540px) {
-  .container {
-    width: 300px;
+  .card {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .list-inline li {
+    margin: 0 10px;
   }
 }
