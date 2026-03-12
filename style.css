@@ -511,15 +511,15 @@ body {
 }
 
 .skill-logo {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   flex-shrink: 0;
-  filter: brightness(0) invert(1) opacity(0.75);
+  filter: brightness(0) invert(1);
 }
 
 .skill-tag:hover .skill-logo {
-  filter: brightness(0) invert(0);
+  filter: brightness(0) invert(1);
 }
 
 .skill-tag.highlight {
