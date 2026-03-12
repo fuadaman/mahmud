@@ -236,11 +236,12 @@ body {
 
 .hero-name {
   font-family: var(--font-serif);
-  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-size: clamp(1.55rem, 6vw, 4rem);
   font-weight: 900;
   color: var(--text-white);
   line-height: 1.1;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .hero-title {
@@ -334,9 +335,9 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  padding: 5px;
-  background: linear-gradient(135deg, var(--accent), var(--dark-2));
-  box-shadow: 0 0 60px rgba(16,185,129,0.25);
+  padding: 4px;
+  background: linear-gradient(145deg, var(--accent) 0%, #065f46 60%, var(--dark-2) 100%);
+  box-shadow: 0 0 60px rgba(16,185,129,0.3), 0 0 0 1px rgba(16,185,129,0.15);
 }
 
 .hero-img {
@@ -344,8 +345,9 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
-  border: 4px solid var(--dark);
+  object-position: center 15%;
+  border: 3px solid rgba(255,255,255,0.08);
+  background: #fff;
 }
 
 .hero-badge {
@@ -490,6 +492,9 @@ body {
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: var(--dark-3);
   color: var(--text-light);
   font-size: 0.78rem;
@@ -498,6 +503,11 @@ body {
   border-radius: 100px;
   border: 1px solid rgba(255,255,255,0.07);
   transition: background var(--transition), color var(--transition);
+}
+
+.skill-tag i {
+  font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 .skill-tag.highlight {
