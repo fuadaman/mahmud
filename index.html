@@ -1,40 +1,497 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahmud Md Fuad – Full-Stack Developer | AI Integration</title>
+  <meta name="description" content="Junior Ruby on Rails Developer with AI integration skills. Building AI-powered web applications in Tokyo, Japan.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hi, this is mahmud and this my first challenge.">
-  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-    <h1>Hi, I'm 鷹島</h1>
-    <h2>The Code Stops Here.</h2>
-    <img src="images/image.jpg" alt="Person with a happy expression working at a computer" height="200" class="img-circle">
-    <p>I rule code, but I serve a blinking box.</p>
-      <a href="https://share.google/Cqap0xPBJd1nDhmsl" class="btn-blue">Discover me</a>
-    </div>
-    <div class="card">
-    <h3>Follow me</h3>
-      <ul class="list-inline">
-        <li>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </li>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Fuad<span class="dot">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
-  </div>
-</body>
+  </nav>
 
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Mahmud Md Fuad</h1>
+        <h2 class="hero-title">Full-Stack Developer <span class="accent">–</span> AI Integration</h2>
+        <p class="hero-summary">
+          Junior Ruby on Rails developer specialising in AI-powered web applications.
+          Trained at Le Wagon Tokyo, building with LLMs, OpenAI APIs, and PostgreSQL.
+          Based in <span class="accent">Tokyo, Japan</span>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/mahmud-md-fuad/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/fuadaman" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:fuad.aman2@outlook.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring">
+          <img src="images/image.jpg" alt="Mahmud Md Fuad" class="hero-img">
+        </div>
+        <div class="hero-badge">
+          <i class="fa-solid fa-location-dot"></i> Tokyo, Japan
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-light" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Junior Ruby on Rails Developer</strong> trained at the AI Software Development Bootcamp at
+            <strong>Le Wagon Tokyo</strong>. I specialise in building AI-powered web applications that solve
+            real-world problems — from smart grocery planners to medicine-assistant tools for foreign residents.
+          </p>
+          <p>
+            Alongside my development journey, I currently work as an <strong>Area Operations Supervisor</strong>
+            managing multi-site hotel operations. This dual background gives me a unique product-focused mindset:
+            I understand both the technical and operational sides of building practical solutions.
+          </p>
+          <p>
+            I bring strong problem-solving skills, a collaborative attitude, and a passion for using AI to make
+            everyday life easier.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <div>
+              <span class="info-label">Location</span>
+              <span class="info-value">Tokyo, Japan</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="info-label">Email</span>
+              <span class="info-value">fuad.aman2@outlook.com</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="info-label">Phone</span>
+              <span class="info-value">+81-70-4123-7849</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-language"></i>
+            <div>
+              <span class="info-label">Languages</span>
+              <span class="info-value">English · Japanese · Bangla · Hindi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Work With</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-icon"><i class="fa-solid fa-server"></i></div>
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Ruby</span>
+            <span class="skill-tag">Ruby on Rails</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MVC Architecture</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3 class="skill-group-title">AI Integration</h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">OpenAI APIs</span>
+            <span class="skill-tag highlight">LLM Integration</span>
+            <span class="skill-tag highlight">Prompt Engineering</span>
+            <span class="skill-tag highlight">AI Agents</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3 class="skill-group-title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Heroku</span>
+            <span class="skill-tag">Mapbox</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-light" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-header project-header-1">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <span class="project-date">03 / 2026</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Where's My Tofu</h3>
+            <p class="project-subtitle">Smart Grocery Planner</p>
+            <p class="project-desc">
+              A web app that compares grocery prices across nearby stores and generates
+              optimised shopping routes. Integrated LLMs to scan and extract product prices
+              from store flyers (chirashi) for real-time pricing data.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> Location-based store discovery with Mapbox</li>
+              <li><i class="fa-solid fa-check"></i> LLM-powered flyer price extraction</li>
+              <li><i class="fa-solid fa-check"></i> Optimised shopping route generation</li>
+            </ul>
+            <div class="project-tech">
+              <span>Ruby on Rails</span>
+              <span>PostgreSQL</span>
+              <span>Mapbox</span>
+              <span>OpenAI API</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header project-header-2">
+            <div class="project-icon"><i class="fa-solid fa-pills"></i></div>
+            <span class="project-date">12 / 2025</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">MaiKusuri</h3>
+            <p class="project-subtitle">AI OTC Medicine Assistant for Foreign Residents in Japan</p>
+            <p class="project-desc">
+              An AI-powered web app helping foreign residents identify OTC medicines and
+              find nearby clinics in English. Analyses symptoms and generates personalised
+              medicine recommendations.
+            </p>
+            <ul class="project-highlights">
+              <li><i class="fa-solid fa-check"></i> OpenAI-powered symptom analysis</li>
+              <li><i class="fa-solid fa-check"></i> English-language medicine recommendations</li>
+              <li><i class="fa-solid fa-check"></i> Team project (4 members) with Git/GitHub</li>
+            </ul>
+            <div class="project-tech">
+              <span>Ruby on Rails</span>
+              <span>PostgreSQL</span>
+              <span>OpenAI API</span>
+              <span>JavaScript</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Area Operations Supervisor</h3>
+                <p class="timeline-company">
+                  <i class="fa-solid fa-building"></i>
+                  株式会社オーエムサービス (OM Service) &nbsp;·&nbsp; Tokyo, Japan
+                </p>
+              </div>
+              <span class="timeline-date">07/2021 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Managed operations across <strong>5 hotel facilities</strong>, ensuring smooth daily service</li>
+              <li>Coordinated staffing, task allocation, and workflow management</li>
+              <li>Resolved operational issues and maintained high service standards</li>
+              <li>Collaborated with management to improve efficiency and resource use</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Business Development Manager</h3>
+                <p class="timeline-company">
+                  <i class="fa-solid fa-building"></i>
+                  株式会社エマノン ソリューションズ (Emanon Solutions K.K.) &nbsp;·&nbsp; Tokyo, Japan
+                </p>
+              </div>
+              <span class="timeline-date">03/2018 – 06/2021</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Acquired and managed new clients for an English driving school serving international residents</li>
+              <li>Identified customer needs and coordinated services with internal teams</li>
+              <li>Improved customer experience through feedback analysis and service optimisation</li>
+              <li>Supported business growth through partnerships and client relationship management</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-light" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning Journey</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card edu-featured">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">Bootcamp</span>
+            <h3 class="edu-title">AI Software Development – Full-Stack Engineering Program</h3>
+            <p class="edu-school">Le Wagon &nbsp;·&nbsp; Tokyo, Japan &nbsp;·&nbsp; 03/2026</p>
+            <ul class="edu-bullets">
+              <li>Completed a 6-month part-time intensive coding bootcamp</li>
+              <li>Built full-stack applications with HTML, CSS, Bootstrap, JavaScript, SQL, and Ruby on Rails</li>
+              <li>Hands-on experience with OpenAI APIs, LLMs, AI agents, and Claude</li>
+              <li>Built an AI-powered assistant as part of a 2-week development project</li>
+              <li>Delivered a functional product within 4 weeks in a team of four</li>
+            </ul>
+            <div class="edu-tech">
+              <span>Ruby</span><span>JavaScript</span><span>SQL</span>
+              <span>HTML</span><span>OpenAI APIs</span><span>GitHub</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-brands fa-google"></i></div>
+          <div class="edu-body">
+            <h3 class="edu-title">Google IT Support Specialization</h3>
+            <p class="edu-school">Coursera &nbsp;·&nbsp; Completed March 2024</p>
+            <p class="edu-desc">
+              Covered IT support fundamentals, networking, security, system administration,
+              and customer service best practices.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-body">
+            <h3 class="edu-title">Higher Secondary Certificate (HSC)</h3>
+            <p class="edu-school">Business Studies &nbsp;·&nbsp; Bangladesh &nbsp;·&nbsp; 2008</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="section section-dark lang-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Communication</span>
+        <h2 class="section-title">Languages</h2>
+      </div>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <span class="lang-flag">🇬🇧</span>
+          <h3>English</h3>
+          <p>Professional working proficiency</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:90%"></div></div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇯🇵</span>
+          <h3>Japanese</h3>
+          <p>JLPT N4 · Conversational</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:45%"></div></div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇧🇩</span>
+          <h3>Bangla</h3>
+          <p>Native speaker</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇮🇳</span>
+          <h3>Hindi</h3>
+          <p>Native speaker</p>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-light" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I'm actively looking for new opportunities. Whether you have a project, a role,
+          or just want to say hi — my inbox is always open.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:fuad.aman2@outlook.com" class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>fuad.aman2@outlook.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/mahmud-md-fuad/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <h3>LinkedIn</h3>
+          <p>mahmud-md-fuad</p>
+        </a>
+        <a href="https://github.com/fuadaman" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>fuadaman</p>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3>Phone</h3>
+          <p>+81-70-4123-7849</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Mahmud Md Fuad</p>
+      <p class="footer-tagline">Full-Stack Developer &nbsp;·&nbsp; AI Integration &nbsp;·&nbsp; Tokyo, Japan</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/mahmud-md-fuad/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/fuadaman" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:fuad.aman2@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Mahmud Md Fuad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(
+      '.project-card, .timeline-item, .edu-card, .lang-card, .contact-card, .skill-group, .info-card'
+    ).forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
+
+    // Active nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navItems.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+    });
+  </script>
+
+</body>
 </html>
