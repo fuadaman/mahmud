@@ -510,6 +510,18 @@ body {
   flex-shrink: 0;
 }
 
+.skill-logo {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1) opacity(0.75);
+}
+
+.skill-tag:hover .skill-logo {
+  filter: brightness(0) invert(0);
+}
+
 .skill-tag.highlight {
   background: rgba(16,185,129,0.15);
   color: var(--accent);
