@@ -635,7 +635,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-top: auto;
+  margin-top: 14px;
   padding-top: 14px;
   border-top: 1px solid #e5e7eb;
 }
